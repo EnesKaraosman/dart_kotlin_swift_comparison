@@ -211,3 +211,207 @@ print("For objects use \(person.name)")
 </tr>
 
 </table>
+
+### Functions
+<table>
+<tr>
+<th> Dart </th>
+<th> Kotlin </th>
+<th> Swift </th>
+</tr>
+
+<tr>
+<td>
+  
+```dart
+// Fill
+```
+  
+</td>
+<td>
+
+```kotlin
+// Fill
+```
+
+</td>
+<td>
+  
+```swift
+// Fill
+```
+    
+</td>
+</tr>
+
+</table>
+
+### Control Flow
+<table>
+<tr>
+<th> Dart </th>
+<th> Kotlin </th>
+<th> Swift </th>
+</tr>
+
+<tr>
+<td>
+  
+```dart
+// Fill
+```
+  
+</td>
+<td>
+
+```kotlin
+// Fill
+```
+
+</td>
+<td>
+  
+```swift
+// Fill
+```
+    
+</td>
+</tr>
+
+</table>
+
+### Collections
+<table>
+<tr>
+<th> Dart </th>
+<th> Kotlin </th>
+<th> Swift </th>
+</tr>
+
+<tr>
+<td>
+  
+```dart
+// Fill
+```
+  
+</td>
+<td>
+
+```kotlin
+// Fill
+```
+
+</td>
+<td>
+  
+```swift
+// Fill
+```
+    
+</td>
+</tr>
+
+</table>
+
+### Optionals & Nullability
+<table>
+<tr>
+<th> Dart </th>
+<th> Kotlin </th>
+<th> Swift </th>
+</tr>
+
+<tr>
+<td>
+  
+```dart
+// Fill
+```
+  
+</td>
+<td>
+
+```kotlin
+// Fill
+```
+
+</td>
+<td>
+  
+```swift
+// Fill
+```
+    
+</td>
+</tr>
+
+</table>
+
+### Extensions
+<table>
+<tr>
+<th> Dart </th>
+<th> Kotlin </th>
+<th> Swift </th>
+</tr>
+
+<tr>
+<td>
+  
+```dart
+// Fill
+```
+  
+</td>
+<td>
+
+```kotlin
+// Fill
+```
+
+</td>
+<td>
+  
+```swift
+// Fill
+```
+    
+</td>
+</tr>
+
+</table>
+
+### Class, Struct, Protocol..
+<table>
+<tr>
+<th> Dart </th>
+<th> Kotlin </th>
+<th> Swift </th>
+</tr>
+
+<tr>
+<td>
+  
+```dart
+// Fill
+```
+  
+</td>
+<td>
+
+```kotlin
+// Fill
+```
+
+</td>
+<td>
+  
+```swift
+// Fill
+```
+    
+</td>
+</tr>
+
+</table>
