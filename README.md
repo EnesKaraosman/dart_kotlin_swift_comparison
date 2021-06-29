@@ -22,8 +22,13 @@ dynamic dinamik = "Dynamic";
 dinamik = 5; // Valid
 
 // Constant
-// Fill
+final name = "Enes";
+const name = "Enes";
+// Anything that isn't known at 
+// compile time 
+// should be final over const.
 ```
+[Difference between const and final](https://stackoverflow.com/questions/50431055/what-is-the-difference-between-the-const-and-final-keywords-in-dart)
   
 </td>
 <td>
@@ -117,7 +122,7 @@ enum MessageKind {
 <td>
   
 ```dart
-// Fill
+typedef GestureTapCallback = void Function();
 ```
   
 </td>
@@ -143,7 +148,8 @@ typealias TapCallback = () -> Void
 <td>
   
 ```dart
-// Fill
+// Check type
+if (myVariable is String) { .. }
 ```
   
 </td>
@@ -178,7 +184,20 @@ if myVariable is String { .. }
 <td>
   
 ```dart
-// Fill
+// Declaration
+var string1 = "String";
+var string2 = 'String';
+
+// Multiline
+var multilineStr = """
+Here you can have your string multiline for easier readability;
+Start & end with 3 quote character.
+""";
+
+// String interpolation
+var name = "Enes";
+print("Hello $name");
+print("For objects use ${person.name}");
 ```
   
 </td>
