@@ -243,7 +243,30 @@ print("For objects use \(person.name)")
 <td>
   
 ```dart
+// Declaration
+String greet(String name) {
+    return "Hey $name";
+}
+
+// Optional named parameters
+void greet(String name) { }
+greet("Enes");
+
+// Named parameters
+void greet({required String name}) { }
+greet(name: "Enes")
+
+// Default parameters
+void greet3({String name = "Enes"}) { }
+greet3();
+greet3(name: "Kral");
+
+// Var args
 // Fill
+
+// Closure/Lambda
+var square = (int x) => x * x;
+square(4);
 ```
   
 </td>
@@ -257,7 +280,33 @@ print("For objects use \(person.name)")
 <td>
   
 ```swift
+// Declaration
+func greet(name: String) -> String {
+    // return keyword is optional if body contains single (code) line 
+    return "Hey \(name)"
+}
+
+// Optional named parameters
+func greet(_ name: String) { }
+greet("Enes")
+
+// Named parameters
+func greet(name: String) { }
+greet(name: "Enes")
+
+// Default parameters
+func greet(name: String = "Enes") { }
+greet()
+greet(name: "Adam")
+
+// Var args
 // Fill
+
+// Closure/Lambda
+var square = { (x: Int) -> Int in 
+    return x * x
+}
+square(4)
 ```
     
 </td>
