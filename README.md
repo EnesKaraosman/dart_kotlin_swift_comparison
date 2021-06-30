@@ -257,12 +257,15 @@ void greet({required String name}) { }
 greet(name: "Enes")
 
 // Default parameters
-void greet3({String name = "Enes"}) { }
-greet3();
-greet3(name: "Kral");
+void greet({String name = "Enes"}) { }
+greet();
+greet(name: "Kral");
 
 // Var args
-// Fill
+// N/A
+// List can be used to achieve
+// similar behaviour
+// or see `varargs` package.
 
 // Closure/Lambda
 var square = (int x) => x * x;
@@ -300,9 +303,11 @@ greet()
 greet(name: "Adam")
 
 // Var args
-// Fill
+func greet(_ names: String...) { }
+greet("Enes", "Egemen", "Ferid", "Serkan")
 
 // Closure/Lambda
+var square: (Int) -> Int = { $0 * $0 }
 var square = { (x: Int) -> Int in 
     return x * x
 }
