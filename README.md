@@ -54,7 +54,7 @@ dinamik = 5 // Valid
 ```swift
 // Implicit type = Int
 var myVariable = 5 
-myVariable = "a string" // Not valid
+myVariable = "a string" // Invalid
 
 // Explicit type: String
 var name: String = "Kral"
@@ -65,7 +65,7 @@ dinamik = 5 // Valid
 
 // Constant
 let gender = "Man"
-gender = "Woman" // Not valid
+gender = "Woman" // Invalid
 ```
     
 </td>
@@ -401,7 +401,21 @@ square(4)
 <td>
   
 ```dart
-// Fill
+// Declaration
+String str = null;  // Invalid
+
+String? str = null; // Valid
+str?.toUpperCase(); // Safe call
+
+String? str = "enes";
+str?.toUpperCase(); // "ENES"
+
+// Null aware operator
+int? id = null;
+var userId = id ?? -1; // -1
+
+int? id = 53;
+var userId = id ?? -1; // 53
 ```
   
 </td>
@@ -415,7 +429,22 @@ square(4)
 <td>
   
 ```swift
-// Fill
+// Declaration
+var str: String = nil  // Invalid
+
+var str: String? = nil // Valid
+str?.uppercased()      // Safe call
+
+var str: String? = "enes";
+str?.uppercased() // Optional("ENES")
+
+// Nil Coalescing operator
+var id: Int? = nil
+var userId = id ?? -1 // -1
+
+var id: Int? = 53;
+var userId = id ?? -1; // 53
+
 ```
     
 </td>
