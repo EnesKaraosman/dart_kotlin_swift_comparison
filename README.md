@@ -265,12 +265,14 @@ greet(name: "Kral");
 // N/A
 // List can be used to achieve
 // similar behaviour
-// or see `varargs` package.
+// or visit `VarArgs` package below.
 
 // Closure/Lambda
 var square = (int x) => x * x;
 square(4);
 ```
+
+[VarArgs Package](https://pub.dev/packages/varargs)
   
 </td>
 <td>
