@@ -333,7 +333,91 @@ square(4)
 <td>
   
 ```dart
-// Fill
+// if and else
+if (isRaining()) {
+  you.bringRainCoat();
+} else if (isSnowing()) {
+  you.wearJacket();
+} else {
+  car.putTopDown();
+}
+  
+// for loops
+for (var i = 0; i < 5; i++) {
+  print('Flutter ${i + 1}');
+}
+  
+// for-in
+var obj = ["Android","iOS","Flutter"]; 
+for (var prop in obj) { 
+  print(prop); 
+} 
+
+// for-each
+var collection = ["Android", "iOS", "Flutter"];
+collection.forEach(print);
+// or
+var callbacks = [];
+for (var i = 0; i < 2; i++) {
+  callbacks.add(() => print(i));
+}
+callbacks.forEach((c) => c()); 
+
+// while
+while (!isDone()) {
+  doSomething();
+}
+  
+// do-while
+do {
+  printLine();
+} while (!atEndOfPage());
+
+// break
+while (true) {
+  if (shutDownRequested()) break;
+  processIncomingRequests();
+}
+
+// continue
+for (int i = 0; i < candidates.length; i++) {
+  var candidate = candidates[i];
+  if (candidate.yearsExperience < 5) {
+    continue;
+  }
+  candidate.interview();
+}
+// or
+candidates
+    .where((c) => c.yearsExperience >= 5)
+    .forEach((c) => c.interview());
+
+// switch-case
+var option = 1;
+switch (option) {
+case 1:
+  print("Android");
+  break;
+case 2:
+  print("iOS");
+  break;
+default:
+  print("Flutter");
+  break;
+}
+  
+// switch-continue
+var option = 1;
+switch (option) {
+case 1:
+  print("Android");
+  continue testCase;
+testCase:
+case 2:
+  print("iOS");
+  break;
+}
+
 ```
   
 </td>
