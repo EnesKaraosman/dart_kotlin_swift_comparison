@@ -1,5 +1,7 @@
 # Dart vs Kotlin vs Swift Comparison
 
+Versions: Swift (5.4.2), Dart (2.13.4), Kotlin
+
 ### Basics, Variables & Constants
 <table>
 <tr>
@@ -333,7 +335,7 @@ square(4)
 <td>
   
 ```dart
-// if and else
+// if & else(if)
 if (isRaining()) {
   you.bringRainCoat();
 } else if (isSnowing()) {
@@ -431,7 +433,83 @@ case 2:
 <td>
   
 ```swift
-// Fill
+// if & else(if)
+if isRaining() {
+    you.bringRainCoat()
+} else if isSnowing() {
+    you.wearJacket()
+} else {
+    car.putTopDown()
+}
+
+// for loops
+// swift does not have C like for loops
+for i in 0..<5 {
+    print("Swift \(i + 1)")
+}
+
+// for-in
+var collection = ["Android", "iOS", "Flutter"]
+for item in collection {
+    print(item)
+}
+
+// for-each
+collection.forEach {
+    print($0)
+}
+
+// while
+while !isDone() {
+    doSomething()
+}
+
+// repeat-while
+repeat {
+    printLine()
+} while !atEndOfPage()
+
+// break
+while true {
+    if (shutDownRequested()) break
+    processIncomingRequests()
+}
+
+// continue
+for candidate in candidates {
+    if candidate.yearsExperience < 5 { continue }
+    candidate.interview()
+}
+
+// or
+candidates
+    .filter { $0.yearsExperience >= 5 }
+    .forEach { $0.interview() }
+
+// switch-case
+var option = 1
+switch option {
+case 1:
+    print("Android")
+case 2:
+    print("iOS")
+default:
+    print("Flutter")
+}
+// Prints "Android"
+
+// switch-continue
+var option = 1
+switch option {
+case 1:
+    print("Android");
+    fallthrough
+case 2:
+    print("iOS")
+default:
+    print("Flutter");
+}
+// Prints "Android" & "iOS"
 ```
     
 </td>
