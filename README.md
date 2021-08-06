@@ -492,6 +492,8 @@ switch option {
 case 1:
     print("Android")
 case 2:
+// ranges also supported -> case 2...5: 
+// ranges also supported -> case 2..<6: 
     print("iOS")
 default:
     print("Flutter")
