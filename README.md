@@ -77,7 +77,21 @@ gender = "Woman" // Invalid
 <td>
   
 ```dart
-// Fill
+enum Color { red, green, blue }
+var aColor = Color.blue;  
+// aColor has index, hashCode & toString() parameters by default.
+
+// Enum cases can not contain associated values like in Swift.
+// Computed variables & Functions can't be added directly to the enum.
+// But they can be added via an extension.
+extension DarkMode on Color {
+  Color get darkModeAlternative {
+    switch (this) {
+      case Color.blue: return Color.red;
+      default: return Color.blue;
+    }
+  }
+}
 ```
   
 </td>
