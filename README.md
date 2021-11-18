@@ -47,7 +47,8 @@ var dinamik: dynamic = "String"
 dinamik = 5 // Valid
 
 // Constant
-// Fill
+const val name = "Enes"
+val name = "Enes"
 ```
 
 </td>
@@ -77,6 +78,7 @@ gender = "Woman" // Invalid
 <td>
   
 ```dart
+// Enum
 enum Color { red, green, blue }
 var aColor = Color.blue;  
 // aColor has index, hashCode & toString() parameters by default.
@@ -98,7 +100,9 @@ extension DarkMode on Color {
 <td>
 
 ```kotlin
-// Fill
+// Enum
+enum class Color {RED, GREEN, BLUE}
+var aColor = Color.BLUE
 ```
 
 </td>
@@ -220,7 +224,19 @@ print("For objects use ${person.name}");
 <td>
 
 ```kotlin
-// Fill
+// Declaration
+var string1 = "String"
+  
+// Multiline
+var multilineStr = """
+Here you can have your string multiline for easier readability;
+Start & end with 3 quote character.
+"""
+  
+// String interpolation
+var name = "Enes";
+print("Hello $name");
+print("For objects use ${person.name}");
 ```
 
 </td>
@@ -294,7 +310,23 @@ square(4);
 <td>
 
 ```kotlin
-// Fill
+// Declaration
+fun greet(name: String): String {
+    return "Hey $name"
+}
+  
+// Optional named parameters
+fun greet(name: String = "No Name") { }
+greet("Enes");
+
+// Named parameters
+fun greet(name: String) { }
+greet("Enes")
+
+// Default parameters
+fun greet(name: String = "Enes") { }
+greet();
+greet(name: "Kral");
 ```
 
 </td>
